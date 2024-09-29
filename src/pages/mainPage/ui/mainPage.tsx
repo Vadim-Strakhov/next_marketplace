@@ -15,8 +15,8 @@ const StyledShop = styled.main`
 `;
 
 export const MainPage = () => {
-  // const { data } = useGetItemsQuery();
-  // console.log(data);
+  const { data } = useGetItemsQuery("");
+  console.log(data);
   return (
     <StyledWrapper>
       <Header />

@@ -10,13 +10,13 @@ export const shopApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: API_URL,
     prepareHeaders: (headers) => {
-      headers.set("Authorization", `Bearer ${API_KEY}`);
+      headers.set("Authorization", `${API_KEY}`);
       return headers;
     },
   }),
   endpoints: (builder) => ({
     getItems: builder.query({
-      query: () => "/",
+      query: () => "",
     }),
   }),
 });
